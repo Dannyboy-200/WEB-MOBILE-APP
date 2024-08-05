@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 1rem;
+  font-family: "Montserrat", san-serif;
+  color: var(--defaultFont-color);
+  width: 100%;
+  min-height: 100%;
+}
+@media (min-width: 48em) {
+  html, body {
+    font-size: 1.375rem;
+  }
+}
+
+body {
+  padding: 1.25rem;
+  background-color: var(--background-color);
+}
+
+:root {
+  --defaultFont-color: #000;
+  --background-color: #4a99e2;
+  --container-bgcolor: #f2f2f2;
+  --container-bordercolor: #000;
+  --textbox-bordercolor: lightgray;
+  --btn-textColor: whitesmoke;
+  --btn-hoverColor: #000;
+  --add-btn-color: #4caf50;
+  --clear-btn-color: #9f6060;
+}
+
+section {
+  background-color: var(--container-bgcolor);
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  border: 1px solid var(--container-bordercolor);
+  border-radius: 0.625rem;
+}
+
+.button {
+  width: 15%;
+  min-width: 3rem;
+  min-height: 3rem;
+  color: var(--btn-textColor);
+  background: var(--add-btn-color);
+  border: 0.125rem solid var(--textbox-bordercolor);
+  border-radius: 0.625rem;
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  filter: brightness(120%);
+  box-shadow: 0.25rem 0.125rem 0.3125rem #000;
+}
+
+.newItemEntry {
+  position: sticky;
+  top: 0;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+}
+.newItemEntry form {
+  display: flex;
+  justify-content: space-between;
+}
+.newItemEntry form label {
+  position: absolute;
+  left: -625rem;
+}
+.newItemEntry form input[type=text] {
+  width: 80%;
+  font-size: 1.25rem;
+  border: 0.125rem solid var(--textbox-bordercolor);
+  border-radius: 10px;
+  padding: 0.75rem;
+  outline: none;
+}
+.newItemEntry form input[type=text]:hover,
+.newItemEntry form input[type=text]:focus {
+  box-shadow: 0.25rem 0.125rem 0.3125rem #000;
+}
+.newItemEntry form button {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.75rem;
+}
+@media (min-width: 48em) {
+  .newItemEntry form button {
+    font-size: 1.5rem;
+  }
+}
+
+.listContainer {
+  min-height: 60vh;
+  padding: 0.75rem;
+}
+.listContainer .listTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.listContainer .listTitle button {
+  font-size: 1rem;
+  background: var(--clear-btn-color);
+  padding: 0 0.1rem;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 48em) {
+  .listContainer .listTitle button {
+    padding: 0 0.5rem;
+  }
+}
+.listContainer .listTitle hr {
+  width: 100%;
+}
+.listContainer .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1rem;
+}
+.listContainer .item input[type=checkbox] {
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 3rem;
+  min-height: 3rem;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+.listContainer .item input[type=checkbox]:focus + label {
+  text-decoration: underline;
+}
+.listContainer .item label {
+  font-size: 1.1rem;
+}

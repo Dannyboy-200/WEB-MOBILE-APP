@@ -1,0 +1,44 @@
+.listContainer {
+  min-height: 60vh;
+  padding: 0.75rem;
+}
+.listContainer .listTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.listContainer .listTitle button {
+  font-size: 1rem;
+  background: var(--clear-btn-color);
+  padding: 0 0.1rem;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 48em) {
+  .listContainer .listTitle button {
+    padding: 0 0.5rem;
+  }
+}
+.listContainer .listTitle hr {
+  width: 100%;
+}
+.listContainer .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1rem;
+}
+.listContainer .item input[type=checkbox] {
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 3rem;
+  min-height: 3rem;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+.listContainer .item input[type=checkbox]:focus + label {
+  text-decoration: underline;
+}
+.listContainer .item label {
+  font-size: 1.1rem;
+}

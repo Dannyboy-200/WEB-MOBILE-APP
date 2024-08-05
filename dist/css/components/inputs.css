@@ -1,0 +1,36 @@
+.newItemEntry {
+  position: sticky;
+  top: 0;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+}
+.newItemEntry form {
+  display: flex;
+  justify-content: space-between;
+}
+.newItemEntry form label {
+  position: absolute;
+  left: -625rem;
+}
+.newItemEntry form input[type=text] {
+  width: 80%;
+  font-size: 1.25rem;
+  border: 0.125rem solid var(--textbox-bordercolor);
+  border-radius: 10px;
+  padding: 0.75rem;
+  outline: none;
+}
+.newItemEntry form input[type=text]:hover,
+.newItemEntry form input[type=text]:focus {
+  box-shadow: 0.25rem 0.125rem 0.3125rem #000;
+}
+.newItemEntry form button {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.75rem;
+}
+@media (min-width: 48em) {
+  .newItemEntry form button {
+    font-size: 1.5rem;
+  }
+}

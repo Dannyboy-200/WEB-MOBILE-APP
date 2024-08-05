@@ -1,0 +1,23 @@
+@use '../util/' as *;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: rem(16);
+    font-family: "Montserrat", san-serif;
+    color: var(--defaultFont-color);
+    width: 100%;
+    min-height: 100%;
+    @include breakpoint (medium) {
+        font-size: rem(22);
+    }
+}
+
+body {
+    padding: rem(20);
+    background-color: var(--background-color);
+}

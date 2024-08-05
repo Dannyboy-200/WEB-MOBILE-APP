@@ -1,0 +1,11 @@
+:root {
+  --defaultFont-color: #000;
+  --background-color: #4a99e2;
+  --container-bgcolor: #f2f2f2;
+  --container-bordercolor: #000;
+  --textbox-bordercolor: lightgray;
+  --btn-textColor: whitesmoke;
+  --btn-hoverColor: #000;
+  --add-btn-color: #4caf50;
+  --clear-btn-color: #9f6060;
+}

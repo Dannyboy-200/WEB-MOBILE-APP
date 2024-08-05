@@ -1,0 +1,11 @@
+@use '../util/' as *;
+
+section {
+    background-color: var(--container-bgcolor);
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    border: 1px solid var(--container-bordercolor);
+    border-radius: rem(10);
+}
+
